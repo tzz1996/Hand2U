@@ -65,7 +65,7 @@ namespace Entity
             get;
             set;
         }
-        public Boolean IsIdenttify
+        public int UserType
         {
             get;
             set;

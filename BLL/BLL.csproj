@@ -39,6 +39,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="EntityManage\CommentPostManage.cs" />
     <Compile Include="EntityManage\CommodityManage.cs" />
     <Compile Include="EntityManage\PostManage.cs" />
     <Compile Include="EntityManage\TradeInfoManage.cs" />
@@ -46,7 +47,16 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="SystemManage\UserManage.cs" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <ProjectReference Include="..\DAL\DAL.csproj">
+      <Project>{e7882dd0-8d5d-408c-8266-28705c2d9cd9}</Project>
+      <Name>DAL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Entity\Entity.csproj">
+      <Project>{37aea5b3-be3e-42a4-8505-07cef5eba589}</Project>
+      <Name>Entity</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
