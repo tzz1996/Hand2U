@@ -19,12 +19,17 @@ namespace Entity
             get;
             set;
         }
-        public string CommomdityDescription
+        public string CommodityName
+        {
+            get;
+            set;
+        }
+        public string CommodityDescription
         {
             get;
             set;    
         }
-        public int CommomdityType
+        public int CommodityType
         {
             get;
             set;
