@@ -1,10 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Data;
+﻿using System.Data;
 using System.Data.SqlClient;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+
 
 namespace BLL.EntityManage
 {
@@ -196,7 +192,7 @@ namespace BLL.EntityManage
             var handler = new DAL.DatabaseHandler();
             return handler.ExeSql(sqlStr, paras);
         }
-
+        
         /// <summary>
         /// 注销用户
         /// </summary>
