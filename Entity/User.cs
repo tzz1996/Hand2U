@@ -39,18 +39,28 @@ namespace Entity
             set;
         }
 
+        public string PassWord
+        {
+            set; 
+            get; 
+        }
         public int UserGrade
         {
             get;
             set;
         }
 
+        public int CreditRate
+        {
+            get; 
+            set; 
+        }
         public string UserEmail
         {
             get; 
             set; 
         }
-        public Byte[] UserImage
+        public byte[] UserImage
         {
             get;
             set;

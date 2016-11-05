@@ -39,6 +39,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Common\MD5Encrypt.cs" />
     <Compile Include="EntityManage\CommentPostManage.cs" />
     <Compile Include="EntityManage\CommodityManage.cs" />
     <Compile Include="EntityManage\PostManage.cs" />
@@ -57,6 +58,7 @@
       <Name>Entity</Name>
     </ProjectReference>
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

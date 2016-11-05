@@ -25,6 +25,8 @@ namespace BLL.EntityManage
            ,[grade]
            ,[email]
            ,[userImage]
+           ,[password]
+           ,[creditRate]
            ,[phoneNumber]
            ,[personalSignature]
            ,[registrationDate]
@@ -38,6 +40,8 @@ namespace BLL.EntityManage
            ,@grade
            ,@email
            ,@userImage
+           ,@password
+           ,@creditRate
            ,@phoneNumber
            ,@personalSignature
            ,@registrationDate
@@ -51,6 +55,9 @@ namespace BLL.EntityManage
                 new SqlParameter("@grade", user.UserGrade),
                 new SqlParameter("@email", user.UserEmail),
                 new SqlParameter("@phoneNumber", user.UserId),
+                new SqlParameter("@userImage",user.UserImage), 
+                new SqlParameter("@password",user.PassWord), 
+                new SqlParameter("@creditRate",user.CreditRate), 
                 new SqlParameter("@personalSignature", user.PersonalSign),
                 new SqlParameter("@registrationDate", user.RegistrationDate),
                 new SqlParameter("@userType", user.UserType),
@@ -73,6 +80,8 @@ namespace BLL.EntityManage
                       ,[grade]
                       ,[email]
                       ,[userImage]
+                      ,[password]
+                      ,[creditRate]
                       ,[phoneNumber]
                       ,[personalSignature]
                       ,[registrationDate]
@@ -87,12 +96,12 @@ namespace BLL.EntityManage
         }
 
         /// <summary>
-        /// 查询用户信息（通过用户昵称）
+        /// 查询用户信息（账号，密码）
         /// </summary>
-        /// <param name="userNickName"></param>
-        /// <param name="nothing"></param>
+        /// <param name="userId"></param>
+        /// <param name="userPwd"></param>
         /// <returns></returns>
-        public DataSet SearchUser(string userNickName, object nothing)
+        public DataSet SearchUser(string userId, object userPwd)
         {
             string sqlStr = @"SELECT [userName]
                       ,[userNickname]
@@ -101,6 +110,39 @@ namespace BLL.EntityManage
                       ,[grade]
                       ,[email]
                       ,[userImage]
+                      ,[password]
+                      ,[creditRate]
+                      ,[phoneNumber]
+                      ,[personalSignature]
+                      ,[registrationDate]
+                      ,[userType]
+                  FROM [User] where phoneNumber=@userId and password=@userPwd";
+            SqlParameter[] paras =
+            {
+                new SqlParameter("@userId", userId),
+                new SqlParameter("@userPwd", userPwd),
+            };
+            var handler = new DAL.DatabaseHandler();
+            return handler.Search(sqlStr, paras);
+        }
+        /// <summary>
+        /// 查询用户信息（通过用户昵称）
+        /// </summary>
+        /// <param name="userNickName"></param>
+        /// <param name="nothing1"></param>
+        /// <param name="nothing2"></param>
+        /// <returns></returns>
+        public DataSet SearchUser(string userNickName, object nothing1,object nothing2)
+        {
+            string sqlStr = @"SELECT [userName]
+                      ,[userNickname]
+                      ,[sex]
+                      ,[userSchool]
+                      ,[grade]
+                      ,[email]
+                      ,[userImage]
+                      ,[password]
+                      ,[creditRate]
                       ,[phoneNumber]
                       ,[personalSignature]
                       ,[registrationDate]
@@ -129,6 +171,8 @@ namespace BLL.EntityManage
                           ,[grade] = @grade
                           ,[email] = @email
                           ,[userImage] = @userImage
+                          ,[password]=@password
+                          ,[creditRate]=@creditRate
                           ,[personalSignature] = @personalSignature
                           ,[registrationDate] = @registrationDate
                           ,[userType] = @userType
@@ -136,16 +180,18 @@ namespace BLL.EntityManage
             SqlParameter[] paras =
             {
                 new SqlParameter("@userName", user.UserName),
-                new SqlParameter("@userNickname", user.UserName),
-                new SqlParameter("@sex", user.UserName),
-                new SqlParameter("@userSchool", user.UserName),
-                new SqlParameter("@grade", user.UserName),
-                new SqlParameter("@email", user.UserName),
-                new SqlParameter("@userImage", user.UserName),
-                new SqlParameter("@personalSignature", user.UserName),
-                new SqlParameter("@registrationDate", user.UserName),
-                new SqlParameter("@userType", user.UserName),
-                new SqlParameter("@userId", user.UserName),
+                new SqlParameter("@userNickname", user.UserNickName),
+                new SqlParameter("@sex", user.Sex),
+                new SqlParameter("@userSchool", user.UserSchool),
+                new SqlParameter("@grade", user.UserGrade),
+                new SqlParameter("@email", user.UserEmail),
+                new SqlParameter("@userImage", user.UserImage),
+                new SqlParameter("@password", user.PassWord),
+                new SqlParameter("@creditRate", user.CreditRate),
+                new SqlParameter("@personalSignature", user.PersonalSign),
+                new SqlParameter("@registrationDate", user.RegistrationDate),
+                new SqlParameter("@userType", user.UserType),
+                new SqlParameter("@userId", user.UserId),
             };
             var handler = new DAL.DatabaseHandler();
             return handler.ExeSql(sqlStr, paras);

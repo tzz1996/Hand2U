@@ -30,11 +30,11 @@ namespace Entity
             set;
         }
 
-        public SqlMoney OriginalPrice
+        public decimal OriginalPrice
         {
             get; set; }
 
-        public SqlMoney EstimateMoney
+        public decimal EstimateMoney
         {
             get; set; }
 
@@ -46,13 +46,13 @@ namespace Entity
         {
             get; set; }
 
-        public SqlBytes CommodityImage1
+        public byte[] CommodityImage1
         {
             get; set; }
-        public SqlBytes CommodityImage2
+        public byte[] CommodityImage2
         {
             get; set; }
-        public SqlBytes CommodityImage3
+        public byte[] CommodityImage3
         {
             get; set; }
 
