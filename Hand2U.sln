@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2013
-VisualStudioVersion = 12.0.31101.0
+VisualStudioVersion = 12.0.40629.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BLL", "BLL\BLL.csproj", "{D8B7F679-1515-43F2-A1B7-8401589D46A1}"
 EndProject
@@ -13,6 +13,7 @@ Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "Web(1)", "http://localhost:
 	ProjectSection(WebsiteProperties) = preProject
 		UseIISExpress = "true"
 		TargetFrameworkMoniker = ".NETFramework,Version%3Dv4.5"
+		ProjectReferences = "{d8b7f679-1515-43f2-a1b7-8401589d46a1}|BLL.dll;{e7882dd0-8d5d-408c-8266-28705c2d9cd9}|DAL.dll;{37aea5b3-be3e-42a4-8505-07cef5eba589}|Entity.dll;"
 		Debug.AspNetCompiler.VirtualPath = "/localhost_60643"
 		Debug.AspNetCompiler.PhysicalPath = "Web\"
 		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_60643\"

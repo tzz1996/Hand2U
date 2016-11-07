@@ -9,6 +9,9 @@ namespace Entity
 {
     public class User
     {
+        /// <summary>
+        /// 为用户的电话号码
+        /// </summary>
         public string UserId
         {
             get; 
