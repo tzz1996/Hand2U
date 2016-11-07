@@ -16,6 +16,8 @@ namespace BLL.SystemManage
         /// <returns></returns>
         public Entity.User Login(Entity.User user)
         {
+            var en = new BLL.Common.MD5Encrypt();
+            user.PassWord = en.MD5_Encrypt(user.PassWord, 32);
             EntityManage.UserManage userManage = new EntityManage.UserManage();
             DataSet ds = userManage.SearchUser(user.UserId, user.PassWord);
             if (ds.Tables[0].Rows.Count == 0)

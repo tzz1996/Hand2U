@@ -1,0 +1,546 @@
+#content {
+    width: 1366px;
+    height: 2075px;
+    background-color: #ededec;
+}
+
+#head {
+    width: 1167px;
+    height: 143px;
+    background-color: #ededec;
+}
+
+#logo {
+    margin-left: 110px;
+}
+
+#headPhoto {
+    margin-left: 100px;
+
+}
+
+#main {
+    width: 1167px;
+    height: 1650px;
+    margin: auto;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    background-color: white;
+}
+
+#menu {
+    width: 1136px;
+    height: 53px;
+    margin: auto;
+    border-radius: 10px 10px 10px 10px;
+    background-color: #313131;
+}
+
+#head a {
+    text-decoration: none;
+}
+
+.register {
+    line-height: 18px;
+    position: absolute;
+    top: 124px;
+    left: 1220px;
+    border-left: 2px #5a5a5a solid;
+    padding-left: 2px;
+    font-size: 18px;
+    font-family: 微软雅黑;
+    color: #5a5a5a;
+}
+
+.homepage {
+    float: left;
+    margin-left: 27px;
+    margin-top: 6px;
+}
+
+.navOne {
+    position: absolute;
+    float: left;
+    margin-left: 72px;
+    margin-top: 6px;
+    left: 220px;
+}
+
+.navTwo {
+    position: absolute;
+    float: left;
+    margin-left: 72px;
+    margin-top: 6px;
+    left: 360px;
+}
+
+.navThree {
+    position: absolute;
+    float: left;
+    margin-left: 72px;
+    margin-top: 6px;
+    left: 500px;
+}
+
+.subnavone {
+    position: relative;
+    z-index: 999;
+    padding-left: 20px;
+    padding-right: 20px;
+    display: block;
+    background-color: #313131;
+    margin-left: -60px;
+}
+
+.subnavtwo {
+    position: relative;
+    z-index: 999;
+    padding-left: 20px;
+    padding-right: 20px;
+    display: block;
+    background-color: #313131;
+    margin-left: -60px;
+}
+
+.subnavthree {
+    position: relative;
+    z-index: 999;
+    padding-left: 20px;
+    padding-right: 20px;
+    display: block;
+    background-color: #313131;
+    margin-left: -60px;
+}
+
+.subnavone:hover {
+    background: #5a5a5a;
+}
+
+.subnavtwo:hover {
+    background: #5a5a5a;
+}
+
+.subnavthree:hover {
+    background: #5a5a5a;
+}
+
+#menu a {
+    text-decoration: none;
+    color: white;
+    font-style: 微软雅黑;
+    font-size: 20px;
+}
+
+#menu li {
+    line-height: 40px;
+    list-style-type: none;
+}
+
+#menu ul li ul {
+    display: none;
+}
+
+.search {
+    position: absolute;
+    top: 181px;
+    left: 810px;
+    width: 420px;
+    height: 36px;
+    border: 0px;
+    border-radius: 0px 10px 10px 0px;
+}
+
+.searchbutton {
+    background-image: url(../img/search.png);
+    width: 44px;
+    height: 36px;
+    position: absolute;
+    top: 181px;
+    left: 770px;
+    border: none;
+}
+
+.button {
+    position: absolute;
+    top: 181px;
+    left: 769px;
+}
+
+.example {
+    z-index: 0;
+    position: absolute;
+    top: 20px;
+    margin: auto;
+    width: 1000px;
+}
+
+.example ol {
+    position: relative;
+    width: 80px;
+    height: 20px;
+    top: -40px;
+    margin: auto;
+}
+
+.example ol li {
+    display: none;
+    float: left;
+    width: 10px;
+    height: 10px;
+    margin: 5px;
+    background: #fff;
+}
+
+#link {
+    width: 1043px;
+    height: 150px;
+    margin: auto;
+    margin-top: 32px;
+}
+
+.linkOne {
+    float: left;
+    width: 300px;
+    height: 150px;
+    background-color: #5989cb;
+}
+
+.linkTwo {
+    margin-left: 72px;
+    float: left;
+    width: 300px;
+    height: 150px;
+    background-color: #ffd900;
+}
+
+.linkThree {
+    margin-left: 70px;
+    float: left;
+    width: 300px;
+    height: 150px;
+    background-color: #fb8172;
+}
+
+.linkFour {
+    margin-left: 5px;
+    float: left;
+    width: 256px;
+    height: 150px;
+    background-color: #fff10b;
+}
+
+.linkTo {
+    font-size: 30px;
+    font-weight: bold;
+    font-family: 微软雅黑;
+    color: white;
+    text-decoration: none;
+    position: absolute;
+    top: 620px;
+    margin-left: 75px;
+}
+
+.arrow {
+    position: absolute;
+    top: 690px;
+    margin-left: 200px;
+}
+
+#sidebar {
+    width: 249px;
+    height: 909px;
+    margin-left: 62px;
+    margin-top: 28px;
+}
+
+#sidebarOne {
+    width: 249px;
+    height: 192px;
+    background-color: #e5e5e5;
+    border-radius: 10px 10px 0px 0px;
+}
+
+#sidebarTwo {
+    width: 249px;
+    height: 126px;
+    background-color: #e5e5e5;
+    margin-top: 20px;
+    border-radius: 10px 10px 0px 0px;
+}
+
+#sidebarThree {
+    width: 249px;
+    height: 160px;
+    background-color: #e5e5e5;
+    margin-top: 20px;
+    border-radius: 10px 10px 0px 0px;
+}
+
+.theme {
+    width: 249px;
+    height: 50px;
+    background-color: #393939;
+    border-radius: 10px 10px 0px 0px;
+}
+
+.theme img {
+    float: left;
+    margin-top: 10px;
+    margin-left: 8px;
+}
+
+.theme p {
+    float: left;
+    color: white;
+    margin-left: 6px;
+    font-size: 20px;
+    font-family: 微软雅黑;
+    margin-top: 10px;
+}
+
+.list {
+    margin-top: 8px;
+    margin-left: 20px;
+}
+
+.sidecontainer img {
+    float: left;
+    margin-top: 5px;
+    margin-left: 40px;
+}
+
+.sidecontainer ul li {
+    list-style-type: none;
+    line-height: 28px;
+}
+
+.list a {
+    text-decoration: none;
+    color: black;
+    font-size: 18px;
+    font-family: 微软雅黑;
+}
+
+#banner {
+    margin-top: 25px;
+    width: 249px;
+    height: 363px;
+    background:url(../img/adbackground.png);
+}
+
+#banner ul li {
+    color: #f75fe3;
+    font-size: 20px;
+    list-style-type: none;
+}
+
+#shop {
+    float: right;
+    width: 800px;
+    height: 903px;
+    position: absolute;
+    top: 748px;
+    left: 420px;
+}
+
+.product {
+    padding: 0px;
+    margin-left: 10px;
+    margin-top: 20px;
+    float: left;
+    width: 250px;
+    height: 285px;
+    border: 2px solid #f17e45;
+}
+
+.product img {
+    margin-top: 40px;
+    margin-left: 40px;
+}
+
+.buy {
+    position: relative;
+    top: -16px;
+    border-radius: 2px 2px 2px 2px;
+    float: left;
+    width: 125px;
+    height: 40px;
+    background-color: #313131;
+}
+
+.details {
+    position: relative;
+    border-radius: 2px 2px 2px 2px;
+    top: -56px;
+    left: 72px;
+    float: right;
+    width: 125px;
+    height: 40px;
+    background-color: #e5e5e5;
+}
+
+.buy a {
+    text-decoration: none;
+    font-family: Microsoft YaHei;
+    color: #ffffff;
+    font-size: 16px;
+    letter-spacing: 12px;
+}
+
+.details a {
+    color: #313131;
+    font-size: 16px;
+    font-family: Microsoft YaHei;
+    text-decoration: none;
+    letter-spacing: 12px;
+}
+
+.buy p {
+    margin-left: 40px;
+    margin-top: 10px;
+}
+
+.details p {
+    margin-left: 40px;
+    margin-top: 10px;
+}
+
+.details img {
+    margin-top: -34px;
+    margin-left: 95px;
+}
+
+.price {
+    position: relative;
+    top: -11px;
+}
+
+.productname {
+    position: relative;
+    float: right;
+    top: -65px;
+}
+
+#footer {
+    width: 1167px;
+    height: 132px;
+    margin-top: 25px;
+    background-color: #313131;
+}
+
+.dashone {
+    width: 0px;
+    height: 90px;
+    border-left: 1px dashed #b6a09d;
+    float: left;
+    margin-top: 20px;
+    margin-left: 30px;
+}
+
+.dashtwo {
+    width: 0px;
+    height: 90px;
+    border-left: 1px dashed #b6a09d;
+    float: left;
+    margin-top: 20px;
+    margin-left: 35px;
+}
+
+.dashthree {
+    width: 0px;
+    height: 90px;
+    border-left: 1px dashed #b6a09d;
+    float: left;
+    margin-top: 20px;
+    margin-left: 30px;
+}
+
+.dashfour {
+    width: 0px;
+    height: 90px;
+    border-left: 1px dashed #b6a09d;
+    float: left;
+    margin-left: 25px;
+    margin-top: 20px;
+}
+
+.dashfive {
+    width: 0px;
+    height: 90px;
+    border-left: 1px dashed #b6a09d;
+    float: left;
+    margin-top: 20px;
+}
+
+.footerone {
+    float: left;
+    margin-left: 105px;
+}
+
+.footertwo {
+    margin-left: 25px;
+    float: left;
+}
+
+.footerthree {
+    float: left;
+    margin-left: 25px;
+}
+
+.footerfour {
+    float: left;
+    margin-left: 25px;
+}
+
+.footerfive {
+    float: left;
+    margin-left: 20px;
+}
+
+.copyright {
+    margin-top: 60px;
+    margin-left: 360px;
+}
+
+.copyright li {
+    display: block;
+    list-style-type: none;
+    float: left;
+    font-size: 16px;
+    font-family: 微软雅黑;
+    color: #565456;
+    border-left: 2px solid #8c8a8a;
+}
+
+.copyright a {
+    text-decoration: none;
+    font-size: 16px;
+    font-family: 微软雅黑;
+    color: #565456;
+}
+
+.about {
+    position: absolute;
+    top: 1871px;
+    left: 312px;
+    text-decoration: none;
+    font-size: 16px;
+    font-family: 微软雅黑;
+    color: #565456;
+}
+
+.address {
+    font-size: 16px;
+    font-family: 微软雅黑;
+    color: #565456;
+    margin-top: 85px;
+    margin-left: 310px;
+}
+
+.right {
+    font-size: 16px;
+    font-family: 微软雅黑;
+    color: #565456;
+    margin-top: -15px;
+    margin-left: 435px;
+}
