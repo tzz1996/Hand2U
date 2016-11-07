@@ -39,7 +39,6 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Common\MD5Encrypt.cs" />
     <Compile Include="EntityManage\CommentPostManage.cs" />
     <Compile Include="EntityManage\CommodityManage.cs" />
     <Compile Include="EntityManage\PostManage.cs" />
